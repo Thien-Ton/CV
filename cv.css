@@ -1,0 +1,263 @@
+:root {
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    width: 1024px;
+}
+
+body {
+    margin: 0;
+    background-color: #7cf1ed;
+    width: 100%;
+    height: auto;
+}
+
+.background-cv {
+    position: relative;
+    top: 0;
+    left: calc(1024px - 66%);
+    margin: 100px 0;
+
+}
+
+.page-1-cv {
+    width: 850px;
+    height: 1000px;
+    display: block;
+    background-color: var(--while-color);
+    border-radius: 2px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.section-info,
+.section-overview,
+.section-education,
+.section-skills,
+.section-caceer {
+    display: block;
+    padding: 30px 12px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.info-with-img {
+    position: relative;
+}
+
+.section-name ,
+.section-birth ,
+.section-phone ,
+.section-email ,
+.section-address  {
+    display: flex;
+}
+
+.section-name__label,
+.section-birth__label,
+.section-phone__label,
+.section-email__label,
+.section-address__label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 100px;
+    padding: 3px 100px 0 10px;
+}
+
+.section-name__fullname,
+.section-birth__day,
+.section-phone__number,
+.section-email__info,
+.section-address__info,
+.section-overview__text,
+.section-education__text,
+.section-skills__text {
+    width: 400px;
+    position: relative;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: start;
+    padding: 3px 0;
+}
+
+.section-phone__number::before {
+    content: "+84";
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.section-img {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    float: right;
+    width: 110px;
+    height: 140px;
+    background-color: rgb(167, 167, 167);
+}
+
+.section-group {
+    display: inline-flex;
+}
+
+.section-skills__group {
+    display: flex;
+}
+
+.section-skills__front-end,
+.section-skills__back-end,
+.section-skills__other {
+ padding: 5px 10px;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.section-skills__text {
+    margin-left: 10px;
+}
+
+
+.section-skills__text::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 10px;
+    border:0.2px solid var(--text-color) ;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 40px;
+}
+
+.section-skill__html::before,
+.section-skill__css::before {
+    content: "";
+    width: 200px;
+    height: 10px;
+    border:0.2px solid var(--text-color) ;
+    border-radius: 0.5rem;
+    background-color: #c3c3c3;
+    position: absolute;
+    right: 40px;
+}
+
+.section-skill__javascript::before {
+    content: "";
+    width: 160px;
+    height: 10px;
+    border:0.2px solid var(--text-color) ;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 80px;
+    background-color: #c3c3c3;
+}
+
+.section-skill__sql::before {
+    content: "";
+    width: 140px;
+    height: 10px;
+    border:0.2px solid var(--text-color) ;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 100px;
+    background-color: #c3c3c3;
+}
+
+.section-skill__php::before {
+    content: "";
+    width: 160px;
+    height: 10px;
+    border:0.2px solid var(--text-color) ;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 80px;
+    background-color: #c3c3c3;
+}
+
+.section-skill__c::before,
+.section-skill__python::before {
+    content: "";
+    width: 100px;
+    height: 10px;
+    border:0.2px solid var(--text-color) ;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 140px;
+    background-color: #c3c3c3;
+}
+
+.section-skill__docker::before,
+.section-skill__kubernetes::before,
+.section-skill__git::before {
+    content: "";
+    width: 160px;
+    height: 10px;
+    border:0.2px solid var(--text-color) ;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 80px;
+    background-color: #c3c3c3;
+}
+
+
+/** Trang 2 */
+
+.page-2-cv {
+    width: 850px;
+    height: 1000px;
+    display: block;
+    background-color: var(--while-color);
+    margin-top: 120px;
+}
+
+.section-caceer__text {
+    font-size: 1.6rem;
+    word-spacing: 2px;
+    padding: 0 10px;
+}
+
+.section-caceer__text--bold-1::before {
+    content: "Short-term goal :";
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.section-caceer__text--bold-2::before {
+    content: "Long-term goal :";
+    font-size: 1.6rem;
+    font-weight: bold;
+}
